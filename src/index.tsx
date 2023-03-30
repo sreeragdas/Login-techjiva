@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Pages } from './pages';
+import { Navbar } from './components/navbar';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +14,8 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <Pages />
+    
+   
   </React.StrictMode>
 );
 

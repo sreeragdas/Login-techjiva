@@ -31,7 +31,7 @@ export const Login: React.FC = () => {
                             <TextField id="outlined-basic" sx={{ width: 400 }} value={values.email} onChange={(e) => setValue((prev) => ({ ...prev, email: e.target.value }))} label="UserName" variant="outlined" />
                         </div>
                         <div className='input-field-password'>
-                            <TextField id="outlined-basic" sx={{ width: 400 }} value={values.password} onChange={(e) => setValue((prev) => ({ ...prev, password: e.target.value }))}
+                            <TextField id="outlined-basic" sx={{ width: 400 }} type='password' value={values.password} onChange={(e) => setValue((prev) => ({ ...prev, password: e.target.value }))}
                                 label="Password" variant="outlined" />
                         </div>
 
@@ -56,6 +56,7 @@ export const Login: React.FC = () => {
                     <div className='forgot-pw'>
                         Forget Password?
                     </div>
+                    <div className='button-style'>
                     <Button
                         className='login-btn'
                         variant='contained'
@@ -70,6 +71,7 @@ export const Login: React.FC = () => {
                     >
                         Login
                     </Button>
+                    </div>
                 </form>
             </div>
         </div>

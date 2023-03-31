@@ -10,59 +10,64 @@ div.login {
     background-position: center;
     background-size: cover;
 
-    > .login-form {
+    >.login-form {
         display: flex;
         justify-content: center;
         border: 1px solid;
         width: 550px;
         height: 450px;
-        border-radius:10px;
+        border-radius: 10px;
         margin-right: 5vw;
         background-color: azure;
+
         @media screen and (max-width: 600px) {
             width: calc(100% - 10%);
             margin: auto;
         }
 
-        > img-style{
-         display: flex;
-         justify-content: center;
+        >img-style {
+            display: flex;
+            justify-content: center;
         }
 
-    
 
-        > form {
-            > .img-style{
+
+        >form {
+            >.img-style {
                 margin-top: 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                > .text{
+                >.text {
 
                     margin-top: 10px;
                     font-size: 1.2rem;
                 }
             }
 
-            > .input-field{
+            >.input-field {
                 margin-top: 10px;
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
 
-                 > .input-field-username{
+                >.input-field-username {
                     margin-bottom: 10px;
-                    
-                 }
+
+                }
+               
             }
-            > input {
+
+            >input {
                 width: 100%;
                 height: 15px;
                 margin: 1rem 0;
                 padding: 0.513rem 0;
 
                 color: var(--login-input-text-color);
-
+                display: flex;
+                flex-wrap: wrap;
                 border: none;
                 border-bottom: 3px solid var(--login-input-border-color);
                 border-bottom: 1px solid;
@@ -78,7 +83,7 @@ div.login {
                 }
             }
 
-            > .eye-icon {
+            >.eye-icon {
                 z-index: 999;
 
                 float: right;
@@ -86,7 +91,7 @@ div.login {
                 margin-top: -45px;
             }
 
-            > .forgot-pw {
+            >.forgot-pw {
                 margin-top: 10px;
                 float: right;
 
@@ -95,13 +100,23 @@ div.login {
                 color: var(--login-forgot-text-color);
                 font-size: 0.875rem;
                 text-decoration: none;
+                
             }
 
-            > .login-btn {
-                width: 100%;
-                margin-top: 15px;
-                background: #0066cc;
+            >.button-style {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: 80px;
+
+                >.login-btn {
+                    padding: 10px;
+                    width: 100%;
+                    margin-top: 15px;
+                    background: #0066cc;
+                }
             }
+
         }
     }
 }
